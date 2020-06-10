@@ -1,0 +1,46 @@
+[{
+        "position": "Front End Engineer",
+        "companyName": "QliqSOFT Inc., Dallas TX",
+        "startDate": "Feb 2020",
+        "endDate": "May 2020",
+        "description": "Worked as a Front-End engineering intern with the developer team, on currently existing apps in the organization, creating new components and resolving bugs. Developed a new design based look for the website, leading the development from the beginning",
+        "companyLogo": "https://d2sjwlf34hkkwr.cloudfront.net/images/20191229172909/Qliqsoft-logo1.png",
+        "width": "105px"
+    },
+    {
+        "position": "UTDesign Developer and Faculty Advisor",
+        "companyName": "The University of Texas at Dallas",
+        "startDate": "Jan 2019",
+        "endDate": "Feb 2020",
+        "description": "Supervised and guided several teams with different goals in Software, Web App Development and Machine Learning Applications, along with User Interface (UI) Design",
+        "companyLogo": "https://cdn.freelogovectors.net/wp-content/uploads/2018/03/ut-dallas-logo03.png",
+        "width": "105px"
+    },
+    {
+        "position": "Programming Camp Lead and Instructor",
+        "companyName": "The University of Texas at Dallas",
+        "startDate": "Jan 2019",
+        "endDate": "Aug 2019",
+        "description": "Taught Coding and Problem Solving, Data Structures (JAVA) and C++, to over 100 students. Devised a course plan for the JavaScript Summer Camp",
+        "companyLogo": "https://cdn.freelogovectors.net/wp-content/uploads/2018/03/ut-dallas-logo03.png",
+        "width": "105px"
+    },
+    {
+        "position": "Salesforce Developer",
+        "companyName": "Thirdware Solution Ltd., Mumbai IN",
+        "startDate": "Jan 2018",
+        "endDate": "Jun 2018",
+        "description": "Developed an App on the Salesforce platform using Apex and Visualforce. Streamlined the provision and auditing of access management for company employees by reducing the application time by 70% and increasing the efficiency by 90%. Analyzed the Security Best Practices for the implementation of Amazon Web Services (AWS) & the Google Cloud Platform (GCP)",
+        "companyLogo": "https://www.thirdware.com/images/logo.png",
+        "width": "105px"
+    },
+    {
+        "position": "Web Developer",
+        "companyName": "ITCC Digital, Ahmedabad IN",
+        "startDate": "May 2017",
+        "endDate": "Jul 2017",
+        "description": "Designed a responsive website using HTML5, CSS (Bootstrap), and JavaScript. Presented the information on the Home Page and respective Detail pages for an emerging Yoga Center and its Services",
+        "companyLogo": "https://addyp.com/place_pic_full/67/19.04.16.00.17-1555391860.2523-17969289.png",
+        "width": "105px"
+    }
+]
