@@ -1,13 +1,19 @@
 <template>
   <v-container>
     <v-row class="text-center" style="width: 100%; margin: 0 auto; ">
-      <v-col cols="7" class="headline">
-        <span class="my-name">{{ meName }}</span>
-        <p class="intro para">{{ tagLine }}</p>
-      </v-col>
-      <v-col cols="5">
+      <div class="headline">
+        <span
+          class="my-name"
+          :style="mobileView?'text-align: center':'text-align:left'"
+        >{{ meName }}</span>
+        <p
+          class="intro para"
+          :style="mobileView?'text-align: center':'text-align:left'"
+        >{{ tagLine }}</p>
+      </div>
+      <div style="margin: 10px auto;">
         <v-img :src="mePic" class="my-pic"></v-img>
-      </v-col>
+      </div>
     </v-row>
     <v-row>
       <v-col cols="12" class="intro">
@@ -63,6 +69,9 @@
 import mePic from "../assets/dj-utd.jpeg";
 export default {
   name: "HomePage",
+  props: {
+    mobileView: Boolean
+  },
 
   data() {
     return {
@@ -84,7 +93,7 @@ export default {
 
 .headline {
   height: 100%;
-  padding: 8% 0 !important;
+  padding: 8% 0 1em !important;
 }
 
 a {
@@ -119,10 +128,10 @@ a {
   text-decoration: underline;
   color: white;
   display: block;
-  text-align: left;
+  line-height: 1em;
 }
 .my-pic {
   border-radius: 50%;
-  width: 60%;
+  width: 225px;
 }
 </style>

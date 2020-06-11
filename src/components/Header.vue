@@ -5,7 +5,6 @@
         v-for="tab in tabs"
         :key="tab"
         class="ma-3 pa-2 tab-card"
-        style="background-color: #00b0a6; color: white;"
         @click="switchTab(tab)"
       >{{ tab }}</v-card>
     </v-row>
@@ -35,6 +34,8 @@ export default {
 }
 
 .tab-card {
+  background-color: #00b0a6 !important;
+  color: white !important;
   height: 35px;
   width: 22%;
   min-width: 100px;

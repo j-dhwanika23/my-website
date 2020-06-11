@@ -5,12 +5,13 @@
         <faw-icon :icon="['fas', 'bars']" @click="showNavMenu = !showNavMenu" />
       </div>
       <Header v-else :currentTab.sync="currentTab" />
+
       <HeaderMobile v-if="showNavMenu" :currentTab.sync="currentTab" />
     </v-app-bar>
 
     <v-content class="app-div">
       <div v-if="currentTab === 'Dhwanika'" class="home-div">
-        <HomePage />
+        <HomePage :mobileView="mobileView" />
       </div>
       <div v-else-if="currentTab === 'Education'" class="app-div">
         <Education />
@@ -74,6 +75,7 @@ export default {
   },
   created() {
     this.switchView();
+    window.addEventListener("resize", this.switchView);
   },
   methods: {
     switchView() {
