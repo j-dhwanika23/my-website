@@ -1,5 +1,5 @@
 <template>
-  <v-container class="edu-div">
+  <v-container class="exp-div">
     <v-row>
       <v-col v-for="job in jobs" :key="job" class="mb-4" cols="12">
         <Job :job="job" />
@@ -13,19 +13,19 @@ import Job from "./Job";
 import jobsJson from "../json/jobs.json";
 export default {
   components: {
-    Job,
+    Job
   },
 
   data() {
     return {
-      jobs: jobsJson,
+      jobs: jobsJson
     };
-  },
+  }
 };
 </script>
 
 <style>
-.edu-div {
+.exp-div {
   background-color: white;
   height: 100%;
   border: 3px solid #e7dac2;
