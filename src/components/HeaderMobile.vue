@@ -1,10 +1,10 @@
 <template>
-  <div class="header-panel">
+  <div class="header-mobile">
     <v-row align="center" justify="center">
       <v-card
         v-for="tab in tabs"
         :key="tab"
-        class="ma-3 pa-2 tab-card"
+        class="ma-3 pa-2 tab-card-2"
         style="background-color: #00b0a6; color: white;"
         @click="switchTab(tab)"
       >{{ tab }}</v-card>
@@ -28,16 +28,21 @@ export default {
 </script>
 
 <style>
-.header-panel {
+.header-mobile {
   background-color: #000;
+  display: block;
+  position: absolute;
+  margin: 147px -16px 0;
   width: 100%;
-  height: inherit;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px #00b0a6;
 }
 
-.tab-card {
+.tab-card-2 {
   height: 35px;
-  width: 22%;
+  width: 50%;
   min-width: 100px;
   text-align: center;
+  display: block !important;
 }
 </style>

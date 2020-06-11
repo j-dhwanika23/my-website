@@ -3,8 +3,12 @@ import App from "./App.vue";
 import vuetify from "./plugins/vuetify";
 
 // ------------------ FONT AWESOME -----------------------------------------------
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  library
+} from "@fortawesome/fontawesome-svg-core";
+import {
+  FontAwesomeIcon
+} from "@fortawesome/vue-fontawesome";
 import {
   faFontAwesome,
   faLinkedin,
@@ -19,9 +23,10 @@ import {
   faCircle,
   faFilePdf,
   faTools,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faEnvelope, faArrowRight, faCircle, faFilePdf, faTools);
+library.add(faBars, faEnvelope, faArrowRight, faCircle, faFilePdf, faTools);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 // --------------------------------------------------------------------------------
 
