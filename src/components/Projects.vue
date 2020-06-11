@@ -1,9 +1,6 @@
 <template>
   <v-container class="edu-div">
-    <font-awesome-icon
-      style="font-size:4em; margin: 10px 5px; color: #00b0a6;"
-      :icon="['fas', 'tools']"
-    />
+    <faw-icon style="font-size:4em; margin: 10px 5px; color: #00b0a6;" :icon="['fas', 'tools']" />
     <v-alert outlined color="#00b0a6" class="message">
       Hi There! Thanks for stopping by. Your presence is valued, please visit
       again in 2 days... There's interesting content coming up.

@@ -18,36 +18,36 @@
     <v-row class="text-center links">
       <v-col cols="12" class="intro">
         <a href="mailto:dhwanika95@gmail.com">
-          <font-awesome-icon class="home-br-icon" :icon="['fas', 'envelope']" />Contact Me
+          <faw-icon class="home-br-icon" :icon="['fas', 'envelope']" />Contact Me
         </a>
         <!-- <div>
-          <font-awesome-icon class="circle-icon" :icon="['fas', 'circle']" />
+          <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
 
           <a href="https://www.linkedin.com/in/dhwanika-joshi/" target="_blank">
-            <font-awesome-icon
+            <faw-icon
               class="home-br-icon"
               :icon="['fab', 'linkedin']"
             />LinkedIn</a
           >
         </div>-->
-        <font-awesome-icon class="circle-icon" :icon="['fas', 'circle']" />
+        <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
 
         <a href="https://www.linkedin.com/in/dhwanika-joshi/" target="_blank">
-          <font-awesome-icon class="home-br-icon" :icon="['fab', 'linkedin']" />LinkedIn
+          <faw-icon class="home-br-icon" :icon="['fab', 'linkedin']" />LinkedIn
         </a>
-        <font-awesome-icon class="circle-icon" :icon="['fas', 'circle']" />
+        <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
         <a href="https://trailblazer.me/id/dhwanikajoshi" target="_blank">
-          <font-awesome-icon class="home-br-icon" :icon="['fab', 'salesforce']" />Trailhead
+          <faw-icon class="home-br-icon" :icon="['fab', 'salesforce']" />Trailhead
         </a>
-        <font-awesome-icon class="circle-icon" :icon="['fas', 'circle']" />
+        <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
 
         <a href="https://github.com/j-dhwanika23" target="_blank">
-          <font-awesome-icon class="home-br-icon" :icon="['fab', 'github']" />GitHub
+          <faw-icon class="home-br-icon" :icon="['fab', 'github']" />GitHub
         </a>
-        <font-awesome-icon class="circle-icon" :icon="['fas', 'circle']" />
+        <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
 
         <a href="https://twitter.com/dhwanika_joshi/" target="_blank">
-          <font-awesome-icon class="home-br-icon" :icon="['fab', 'twitter-square']" />Twitter
+          <faw-icon class="home-br-icon" :icon="['fab', 'twitter-square']" />Twitter
         </a>
       </v-col>
       <!-- https://www.researchgate.net/profile/Dhwanika_Joshi

@@ -1,17 +1,13 @@
 <template>
   <v-container class="edu-div">
-    <v-btn class="dwn-btn"
-      ><font-awesome-icon
-        class="pdf-icon"
-        :icon="['fas', 'file-pdf']"
-      />Download PDF</v-btn
-    >
-    jjj
+    <v-btn class="dwn-btn">
+      <faw-icon class="pdf-icon" :icon="['fas', 'file-pdf']" />Download PDF
+    </v-btn>jjj
     <link rel="icon" href="../../public/resume.pdf" />
     <!-- <pdf src="../assets/resumeNew.jpg"></pdf> -->
     kkk
-    <v-row class="text-center"
-      ><v-img width="100%" :src="resume"></v-img>
+    <v-row class="text-center">
+      <v-img width="100%" :src="resume"></v-img>
     </v-row>
   </v-container>
 </template>
@@ -24,7 +20,7 @@ export default {
 
   data() {
     return { resume };
-  },
+  }
 };
 </script>
 

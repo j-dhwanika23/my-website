@@ -2,10 +2,10 @@
   <v-app>
     <v-app-bar app class="header-bar">
       <div v-if="mobileView" class="menu-icon">
-        <font-awesome-icon :icon="['fas', 'bars']" @click="showNavMenu = !showNavMenu" />
+        <faw-icon :icon="['fas', 'bars']" @click="showNavMenu = !showNavMenu" />
       </div>
       <Header v-else :currentTab.sync="currentTab" />
-      <HeaderMobile v-if="showNavMenu" />
+      <HeaderMobile v-if="showNavMenu" :currentTab.sync="currentTab" />
     </v-app-bar>
 
     <v-content class="app-div">
@@ -32,7 +32,7 @@
       >
         Background vectors created by starline -
         www.freepik.com
-        <font-awesome-icon style="font-size:1em; margin: 0 5px" :icon="['fas', 'arrow-right']" />
+        <faw-icon style="font-size:1em; margin: 0 5px" :icon="['fas', 'arrow-right']" />
       </v-btn>
     </v-content>
   </v-app>

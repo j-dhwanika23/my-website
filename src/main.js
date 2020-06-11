@@ -27,7 +27,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faBars, faEnvelope, faArrowRight, faCircle, faFilePdf, faTools);
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("faw-icon", FontAwesomeIcon);
 // --------------------------------------------------------------------------------
 
 Vue.config.productionTip = false;
