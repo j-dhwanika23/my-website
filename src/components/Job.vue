@@ -1,34 +1,21 @@
 <template>
   <v-container class="job-div">
-    <v-row>
-      <v-col md="2"
-        ><v-img
-          :width="job.width"
-          :src="job.companyLogo"
-          class="co-logo"
-        ></v-img
-      ></v-col>
-      <v-col md="10">
-        <v-row>
-          <v-col md="8">
-            <div class="position">{{ job.position }}</div></v-col
-          >
-          <v-col md="4"
-            ><div class="dates">
-              {{ job.startDate }} - {{ job.endDate }}
-            </div></v-col
-          >
-        </v-row>
-
-        <div class="company">{{ job.companyName }}</div>
-
-        <div class="description">
-          <ul>
-            <li v-for="line in splitDescription()" :key="line">{{ line }}</li>
-          </ul>
-        </div></v-col
-      >
-    </v-row>
+    <v-img style=" display: inline-flex" :width="job.width" :src="job.companyLogo"></v-img>
+    <div class="position">{{job.position}}</div>
+    <div class="company">{{ job.companyName }}</div>
+    <div class="dates">
+      <!-- {{ job.companyName }}
+      <span style="font-weight: bolder">|</span>-->
+      {{ job.startDate }} - {{ job.endDate }}
+    </div>
+    <div class="description">
+      <ul class="list">
+        <li v-for="line in splitDescription()" :key="line">
+          {{ line }}
+          <hr class="hrule" />
+        </li>
+      </ul>
+    </div>
   </v-container>
 </template>
 
@@ -36,19 +23,19 @@
 import utdLogo from "../assets/utd.png";
 export default {
   props: {
-    job: Object,
+    job: Object
   },
   data() {
     return {
-      utdLogo,
+      utdLogo
     };
   },
   methods: {
     splitDescription() {
       const lines = this.job.description.split(".");
       return lines;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -70,7 +57,7 @@ export default {
 .dates {
   font-family: Tenali Ramakrishna;
   font-size: 25px;
-  padding: 5px;
+  /* padding: 5px; */
   text-align: center;
 }
 .company {
@@ -83,5 +70,16 @@ export default {
 }
 .description {
   font-family: Roboto Slab;
+}
+.list {
+  list-style: none;
+  text-align: justify;
+}
+
+.hrule {
+  border-radius: 50px;
+  height: 1px;
+  border: 1px;
+  background-image: linear-gradient(to right, #76dc9c 0%, #57aed8 100%);
 }
 </style>

@@ -8,8 +8,8 @@
     ></v-img>
     <div class="name">{{school.name}}</div>
     <v-spacer></v-spacer>
-    <div class="gpa">{{school.gpa}}</div>
     <div class="degree">{{school.degree}} in Computer Science</div>
+    <div class="gpa">{{school.gpa}}</div>
   </v-container>
 </template>
 
@@ -29,6 +29,9 @@ export default {
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lobster%20Two);
+@import url(https://fonts.googleapis.com/css?family=Tenali%20Ramakrishna);
+@import url(https://fonts.googleapis.com/css?family=Roboto%20Slab);
+
 .school-div {
   border-radius: 25px;
   height: 100%;
@@ -36,16 +39,18 @@ export default {
 }
 .name {
   font-family: Lobster Two;
+
   font-size: xx-large;
   font-weight: bold;
   text-decoration: underline;
 }
 .gpa {
-  font-family: monospace;
+  font-family: Roboto Slab;
   font-weight: bold;
 }
 .degree {
-  font-family: Lobster Two;
+  /* font-family: Lobster Two; */
+  font-family: Tenali Ramakrishna;
   font-size: xx-large;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-container class="exp-div">
-    <v-row>
+    <v-row class="text-center">
       <v-col v-for="job in jobs" :key="job" class="mb-4" cols="12">
         <Job :job="job" />
       </v-col>
