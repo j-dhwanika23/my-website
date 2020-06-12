@@ -2,11 +2,18 @@
   <v-app>
     <v-app-bar app class="header-bar">
       <div v-if="mobileView" class="menu-icon">
-        <faw-icon :icon="['fas', 'bars']" @click="showNavMenu = !showNavMenu" />
+        <faw-icon ref="menu" :icon="['fas', 'bars']" @click="showNavMenu = !showNavMenu" />
       </div>
       <Header v-else :currentTab.sync="currentTab" />
 
-      <HeaderMobile v-if="showNavMenu" :currentTab.sync="currentTab" />
+      <HeaderMobile
+        v-if="showNavMenu"
+        :currentTab.sync="currentTab"
+        v-closable="{
+    exclude: ['menu'],
+    handler: 'onClose'
+  }"
+      />
     </v-app-bar>
 
     <v-content class="app-div" style="max-width: unset !important">
@@ -75,6 +82,9 @@ export default {
     switchView() {
       console.log(window.innerWidth);
       this.mobileView = window.innerWidth <= 900;
+    },
+    onClose() {
+      this.showNavMenu = false;
     }
   }
 };
