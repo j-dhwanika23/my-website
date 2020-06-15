@@ -77,6 +77,7 @@ export default {
   created() {
     this.switchView();
     window.addEventListener("resize", this.switchView);
+    console.log("Height:", window.innerHeight);
   },
   methods: {
     switchView() {

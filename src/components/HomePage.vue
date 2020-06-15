@@ -37,23 +37,20 @@
           >
         </div>-->
         <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
-
         <a href="https://www.linkedin.com/in/dhwanika-joshi/" target="_blank">
           <faw-icon class="home-br-icon" :icon="['fab', 'linkedin']" />LinkedIn
         </a>
         <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
-        <a href="https://trailblazer.me/id/dhwanikajoshi" target="_blank">
-          <faw-icon class="home-br-icon" :icon="['fab', 'salesforce']" />Trailhead
+        <a href="https://app.joinhandshake.com/users/15072348" target="_blank">
+          <v-img :src="handshake" class="handshake-icon"></v-img>Handshake
         </a>
         <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
-
         <a href="https://github.com/j-dhwanika23" target="_blank">
           <faw-icon class="home-br-icon" :icon="['fab', 'github']" />GitHub
         </a>
         <faw-icon class="circle-icon" :icon="['fas', 'circle']" />
-
-        <a href="https://twitter.com/dhwanika_joshi/" target="_blank">
-          <faw-icon class="home-br-icon" :icon="['fab', 'twitter-square']" />Twitter
+        <a href="https://trailblazer.me/id/dhwanikajoshi" target="_blank">
+          <faw-icon class="home-br-icon" :icon="['fab', 'salesforce']" />Trailhead
         </a>
       </v-col>
       <!-- https://www.researchgate.net/profile/Dhwanika_Joshi
@@ -67,6 +64,7 @@
 <script>
 // import mePic from "../assets/dvj170000.jpg";
 import mePic from "../assets/dj-utd.jpeg";
+import handshake from "../assets/handshake.png";
 export default {
   name: "HomePage",
   props: {
@@ -76,6 +74,7 @@ export default {
   data() {
     return {
       mePic,
+      handshake,
       meName: "Dhwanika Joshi",
       tagLine: "2020 graduate in Computer Science from UT Dallas",
       para: [
@@ -133,5 +132,12 @@ a {
 .my-pic {
   border-radius: 50%;
   width: 225px;
+}
+
+.handshake-icon {
+  display: inline-block !important;
+  width: 2em;
+  border-radius: 3px;
+  margin: 0 6px -10px 0;
 }
 </style>
