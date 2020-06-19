@@ -9,6 +9,7 @@ import {
 import {
   FontAwesomeIcon
 } from "@fortawesome/vue-fontawesome";
+// ------- Brands ----------------------------------------------------------------------------
 import {
   faFontAwesome,
   faLinkedin,
@@ -17,16 +18,18 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 library.add(faFontAwesome, faLinkedin, faSalesforce, faGithub, faTwitterSquare);
+// ------- Solid -------------------------------------------------------------------------------
 import {
   faEnvelope,
   faArrowRight,
   faCircle,
   faFilePdf,
   faTools,
-  faBars
+  faBars,
+  faArrowAltCircleDown
 } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faBars, faEnvelope, faArrowRight, faCircle, faFilePdf, faTools);
+library.add(faBars, faEnvelope, faArrowRight, faCircle, faFilePdf, faTools, faArrowAltCircleDown);
+//------ component ----------------------------------------------------------------------------
 Vue.component("faw-icon", FontAwesomeIcon);
 
 // -------------------- DIRECTIVES------------------------------------------------------------

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="home-div">
     <v-row class="text-center" style="width: 100%; margin: 0 auto; ">
       <div class="headline">
         <span

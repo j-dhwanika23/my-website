@@ -12,7 +12,7 @@
       <ul class="list">
         <li v-for="line in splitDescription()" :key="line">
           {{ line }}
-          <hr class="hrule" />
+          <!-- <hr class="hrule" /> -->
         </li>
       </ul>
     </div>
@@ -70,9 +70,11 @@ export default {
 }
 .description {
   font-family: Roboto Slab;
+  width: 70%;
+  margin: 0 auto;
 }
 .list {
-  list-style: none;
+  list-style: disc;
   text-align: justify;
 }
 
